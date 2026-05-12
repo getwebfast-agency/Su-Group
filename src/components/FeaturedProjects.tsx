@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 const projects = [
   {
