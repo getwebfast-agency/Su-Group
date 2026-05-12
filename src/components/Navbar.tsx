@@ -73,7 +73,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="xl:hidden text-soft-white"
+          className="xl:hidden text-soft-white relative z-[60] p-2 -mr-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
