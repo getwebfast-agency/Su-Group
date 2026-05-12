@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
   return (
     <section className="py-12 md:py-24 relative overflow-hidden bg-[#0a0a0a]">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-16">
 
           {/* Left Text */}
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
                 <span className="uppercase tracking-[0.3em] text-gold text-sm font-bold">Why SU Group</span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 leading-tight">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 md:mb-8 leading-tight">
                 The Gold Standard in Real Estate.
               </h2>
 
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.2 }}
-                    className="glass-dark p-8 border hover:border-gold/30 transition-colors duration-300"
+                    className="glass-dark p-5 md:p-8 border hover:border-gold/30 transition-colors duration-300"
                   >
                     <reason.icon className="text-gold mb-6" size={32} />
                     <h3 className="text-xl font-heading font-bold mb-3">{reason.title}</h3>
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: (index + 2) * 0.2 }}
-                    className="glass-dark p-8 border hover:border-gold/30 transition-colors duration-300"
+                    className="glass-dark p-5 md:p-8 border hover:border-gold/30 transition-colors duration-300"
                   >
                     <reason.icon className="text-gold mb-6" size={32} />
                     <h3 className="text-xl font-heading font-bold mb-3">{reason.title}</h3>

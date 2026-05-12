@@ -62,7 +62,9 @@ const Footer = () => {
                   { name: 'About Us', path: '/about' },
                   { name: 'Portfolio', path: '/projects' },
                   { name: 'Services', path: '/services' },
-                  { name: 'Contact', path: '/contact' }
+                  { name: 'Contact', path: '/contact' },
+                  { name: 'Privacy Policy', path: '/privacy' },
+                  { name: 'Terms of Service', path: '/terms' }
                 ].map((link) => (
                   <li key={link.name}>
                     <Link to={link.path} className="text-soft-white/60 text-sm hover:text-gold transition-colors duration-300 flex items-center gap-2 group">
@@ -111,17 +113,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/5 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-4">
+        <div className="border-t border-white/5 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-soft-white/40 text-xs tracking-wider text-center md:text-left">
             &copy; {new Date().getFullYear()} SU Group. All rights reserved.
           </p>
           <p className="text-soft-white/60 text-xs tracking-wider flex items-center justify-center">
             Designed with <span className="text-red-500 mx-1.5 text-[10px]">❤️</span> by <a href="#" target="_blank" rel="noopener noreferrer" className="text-gold font-medium ml-1.5 hover:text-white transition-colors tracking-widest">GET WEB FAST</a>
           </p>
-          <div className="flex gap-6 text-soft-white/40 text-xs tracking-wider justify-center md:justify-end">
-            <Link to="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-gold transition-colors">Terms of Service</Link>
-          </div>
         </div>
       </div>
 

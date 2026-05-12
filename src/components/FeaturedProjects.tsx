@@ -30,7 +30,7 @@ const projects = [
 
 const FeaturedProjects = () => {
   return (
-    <section id="projects" className="py-32 relative">
+    <section id="projects" className="py-16 md:py-32 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center justify-center text-center mb-16">
           <motion.div
@@ -60,7 +60,7 @@ const FeaturedProjects = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               className="group cursor-pointer"
             >
-              <div className="relative h-[500px] overflow-hidden mb-6">
+              <div className="relative h-[280px] md:h-[500px] overflow-hidden mb-4 md:mb-6">
                 <img
                   src={project.image}
                   alt={project.title}

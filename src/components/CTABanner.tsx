@@ -23,12 +23,12 @@ const CTABanner = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 p-12 md:p-24 flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div className="relative z-10 p-7 md:p-24 flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-10">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-4 md:mb-6">
               Let’s Build Your <span className="text-gradient">Dream Property</span>
             </h2>
-            <p className="text-lg text-soft-white/80 font-light max-w-lg mb-8">
+            <p className="text-base md:text-lg text-soft-white/80 font-light max-w-lg mb-6 md:mb-8">
               Start your journey towards unparalleled luxury. Our experts are ready to turn your vision into an architectural masterpiece.
             </p>
           </div>

@@ -62,7 +62,7 @@ const Testimonials = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
-              className="glass p-10 md:p-16 relative"
+              className="glass p-6 md:p-16 relative"
             >
               <Quote className="text-gold/20 absolute top-8 left-8" size={80} />
 
@@ -73,7 +73,7 @@ const Testimonials = () => {
                   ))}
                 </div>
 
-                <p className="text-xl md:text-3xl font-light text-soft-white/90 leading-relaxed mb-10">
+                <p className="text-lg md:text-3xl font-light text-soft-white/90 leading-relaxed mb-7 md:mb-10">
                   "{testimonials[currentIndex].text}"
                 </p>
 
@@ -93,12 +93,12 @@ const Testimonials = () => {
           </AnimatePresence>
 
           {/* Controls */}
-          <div className="absolute top-1/2 -translate-y-1/2 -left-4 md:-left-12">
+          <div className="absolute top-1/2 -translate-y-1/2 left-0 md:-left-12 -translate-x-1/2 md:translate-x-0">
             <button onClick={prev} className="p-3 glass rounded-full hover:bg-gold hover:text-background transition-colors duration-300">
               <ChevronLeft size={24} />
             </button>
           </div>
-          <div className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-12">
+          <div className="absolute top-1/2 -translate-y-1/2 right-0 md:-right-12 translate-x-1/2 md:translate-x-0">
             <button onClick={next} className="p-3 glass rounded-full hover:bg-gold hover:text-background transition-colors duration-300">
               <ChevronRight size={24} />
             </button>

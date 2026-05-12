@@ -36,7 +36,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-background-secondary relative">
+    <section id="services" className="py-14 md:py-24 bg-background-secondary relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.div
@@ -54,7 +54,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-5xl font-heading font-bold"
+            className="text-3xl md:text-5xl font-heading font-bold"
           >
             Our Premium Services
           </motion.h2>
@@ -70,7 +70,7 @@ const Services = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative p-1 bg-gradient-to-b from-white/10 to-transparent hover:from-gold/50 hover:to-gold/10 transition-colors duration-500 overflow-hidden"
             >
-              <div className="bg-background h-full p-8 md:p-10 relative z-10 overflow-hidden">
+              <div className="bg-background h-full p-6 md:p-10 relative z-10 overflow-hidden">
                 {/* Background Hover Effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
 

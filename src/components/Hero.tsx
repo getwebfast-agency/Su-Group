@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-start justify-end h-full pb-32 md:pb-28 container mx-auto px-6 md:px-12 pt-20">
+      <div className="relative z-10 flex flex-col items-start justify-center md:justify-end h-full pb-0 md:pb-28 container mx-auto px-6 md:px-12 pt-20">
         <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -34,7 +34,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold leading-[1.1] mb-8"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.1] mb-5 md:mb-8"
             style={{ filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.5)) drop-shadow(0 2px 4px rgba(0,0,0,0.4))' }}
           >
             Building <span className="text-gradient">Luxury</span><br />
@@ -46,7 +46,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-lg md:text-xl text-soft-white/70 max-w-2xl mb-12 font-light leading-relaxed"
+            className="text-sm md:text-lg lg:text-xl text-soft-white/70 max-w-2xl mb-8 md:mb-10 font-light leading-relaxed"
             style={{ textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}
           >
             Premium Villas, Bungalows & Land Investments Designed for Modern Lifestyles. Masterpieces of architecture blending nature with ultimate comfort.

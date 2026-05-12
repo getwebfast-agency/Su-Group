@@ -32,9 +32,9 @@ ${formData.message}`;
     }, 500);
   };
   return (
-    <section id="contact" className="py-24 relative bg-background">
+    <section id="contact" className="py-14 md:py-24 relative bg-background">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-16">
 
           {/* Left Info & Map */}
           <div className="w-full lg:w-1/2">
@@ -98,7 +98,7 @@ ${formData.message}`;
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="glass p-8 md:p-12 relative"
+              className="glass p-6 md:p-12 relative"
             >
               <h3 className="text-2xl font-heading font-bold mb-8">Send an Inquiry</h3>
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>

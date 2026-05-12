@@ -40,25 +40,25 @@ const Navbar = () => {
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass py-4' : 'bg-transparent py-6'
         }`}
     >
-      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="container mx-auto px-4 lg:px-8 xl:px-12 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center group cursor-pointer -ml-2 md:-ml-4 h-16 md:h-24 w-32 md:w-48 overflow-visible">
+        <Link to="/" className="flex items-center group cursor-pointer -ml-4 md:-ml-8 xl:-ml-12 h-16 md:h-20 xl:h-24 w-[220px] md:w-[280px] xl:w-[350px]">
           <img 
             src="/logo_horizontal.png" 
             alt="SU Group Logo" 
-            className="w-full h-full object-contain scale-[1.8] md:scale-[2.2] origin-left transition-transform duration-500 group-hover:scale-[1.9] md:group-hover:scale-[2.3]"
+            className="w-full h-full object-contain object-left scale-[1.8] md:scale-[2] xl:scale-[2.2] origin-left transition-transform duration-500 group-hover:scale-[1.9] md:group-hover:scale-[2.1] xl:group-hover:scale-[2.3]"
           />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
-          <div className="flex items-center gap-6">
+        <div className="hidden xl:flex items-center gap-4 xl:gap-8">
+          <div className="flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `text-sm tracking-wider uppercase transition-colors duration-300 font-medium ${isActive ? 'text-gold' : 'text-soft-white/80 hover:text-gold'
+                  `text-xs xl:text-sm tracking-wider uppercase transition-colors duration-300 font-medium ${isActive ? 'text-gold' : 'text-soft-white/80 hover:text-gold'
                   }`
                 }
               >
@@ -66,14 +66,14 @@ const Navbar = () => {
               </NavLink>
             ))}
           </div>
-          <button onClick={() => setIsModalOpen(true)} className="bg-gold text-background px-6 py-3 uppercase text-sm tracking-widest font-bold hover:bg-white transition-colors duration-300">
+          <button onClick={() => setIsModalOpen(true)} className="bg-gold text-background px-4 xl:px-6 py-2.5 xl:py-3 uppercase text-xs xl:text-sm tracking-widest font-bold hover:bg-white transition-colors duration-300">
             Book Consultation
           </button>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-soft-white"
+          className="xl:hidden text-soft-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -86,7 +86,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.25 }}
-          className="md:hidden absolute top-full left-0 w-full py-6 flex flex-col items-center gap-1 shadow-[0_20px_60px_rgba(0,0,0,0.8)]"
+          className="xl:hidden absolute top-full left-0 w-full py-6 flex flex-col items-center gap-1 shadow-[0_20px_60px_rgba(0,0,0,0.8)]"
           style={{
             background: 'linear-gradient(180deg, #0d0d0d 0%, #080808 100%)',
             borderTop: '1px solid rgba(212, 175, 55, 0.15)',
